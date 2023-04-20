@@ -1,10 +1,10 @@
 import React from "react";
 import { StatusBar } from "expo-status-bar";
 import { createMaterialBottomTabNavigator } from "@react-navigation/material-bottom-tabs";
-import { WithFonts, ProvideThemes, ProvideDatabase, ProvideLegalAgreement } from './src/utils'
-import Screens from "./src/ui/navigation";
-import Welcome from "./src/ui/screens/welcome";
-import { Screen } from "./src/ui/components";
+import { WithFonts, ProvideThemes, ProvideDatabase, ProvideLegalAgreement } from './utils'
+import Screens from "./ui/navigation";
+import Welcome from "./ui/screens/welcome";
+import { Screen } from "./ui/components";
 
 const Tab = createMaterialBottomTabNavigator();
 
