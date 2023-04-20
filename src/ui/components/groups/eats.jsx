@@ -6,16 +6,6 @@ import { Button } from "../button";
 import { sizes, globalStyles, useDatabase, transform } from "../../../utils"
 import Product from "../product";
 
-/*
-<Group title="Breakfast I" />
-<Group title="Breakfast II" />
-<Group title="Lunch I" />
-<Group title="Lunch II" />
-<Group title="Dinner" />
-<Group title="Snacks">
-</Group>
-*/
-
 
 export default function Eats({ adding, setAdding }) {
   const { eats } = useDatabase()

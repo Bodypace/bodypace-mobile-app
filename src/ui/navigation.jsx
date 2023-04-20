@@ -3,7 +3,6 @@ import { StyleSheet } from "react-native";
 import { NavigationContainer } from "@react-navigation/native";
 import { Icon } from "./components"
 import { Diet, Settings } from './screens'
-// import { Diet, Products, Settings } from './screens'
 import { langEn, colors } from "../utils";
 
 
@@ -18,11 +17,6 @@ export default function Screens({ navigator }) {
             <Icon focused={focused} name="food-apple" material />
           )}}
         />
-        {/* <navigator.Screen name="Products" component={Products}
-          options={{ tabBarIcon: ({ focused }) => (
-            <Icon focused={focused} name="store" material />
-          )}}
-        /> */}
         <navigator.Screen name={lang.settings} component={Settings}
           options={{ tabBarIcon: ({ focused }) => (
             <Icon focused={focused} name="settings" />
