@@ -1,3 +1,8 @@
 node_modules/
 .expo/
-production/
+!production/
+production/*
+!production/releases/
+production/releases/*
+!production/releases/universal.apk
+!production/releases/bodypace-prod-3-assets/
