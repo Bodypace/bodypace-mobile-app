@@ -7,8 +7,8 @@ export default function DietScreen() {
 
   return (
     <Screen>
-      {!adding && <Logo /> }
-      <Group.Calendar/>
+      <Logo />
+      {!adding && <Group.Calendar/> }
       <Group.Eats adding={adding} setAdding={setAdding}/>
       {!!adding ?
         <Group.Products onCancel={() => setAdding(false)}/> :
