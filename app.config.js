@@ -27,7 +27,7 @@ module.exports = () => ({
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
       },
-      "package": IS_DEV ? "com.bodypace.mobileapp-dev" : "com.bodypace.mobileapp"
+      "package": IS_DEV ? "com.bodypace.dev.mobileapp" : "com.bodypace.mobileapp"
     },
     "web": {
       "favicon": "./assets/favicon.png"
