@@ -41,8 +41,7 @@
     "yup": "^0.32.11"
   },
   "devDependencies": {
-    "@babel/core": "^7.19.3",
-    "eas-cli": "^3.9.2"
+    "@babel/core": "^7.19.3"
   },
   "private": true
 }
