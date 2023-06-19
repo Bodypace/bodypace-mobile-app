@@ -88,6 +88,7 @@ export default function Product({ obj = emptyProduct, onDiscard }) {
       saturated: Number(edits.saturated),
       salt: Number(edits.salt),
     })
+    onDiscard()
   }
 
   const onPress = () => {
