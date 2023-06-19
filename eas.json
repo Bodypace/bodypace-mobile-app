@@ -11,24 +11,12 @@
       },
       "env": {
         "BODYPACE_APP_VARIANT": "development"
-      },
-      "channel": "development"
-    },
-    "preview": {
-      "distribution": "internal",
-      "ios": {
-        "resourceClass": "m-medium"
-      },
-      "env": {
-        "BODYPACE_APP_VARIANT": "preview"
-      },
-      "channel": "preview"
+      }
     },
     "production": {
       "ios": {
         "resourceClass": "m-medium"
-      },
-      "channel": "production"
+      }
     }
   },
   "submit": {

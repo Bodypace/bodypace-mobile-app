@@ -1,12 +1,8 @@
 const IS_DEV = process.env.BODYPACE_APP_VARIANT === 'development';
-const IS_PREVIEW = process.env.BODYPACE_APP_VARIANT === 'preview';
 
 module.exports = () => ({
   "expo": {
-    "name":
-      IS_DEV ? "Bodypace (Dev)" :
-        IS_PREVIEW ? "Bodypace (Preview)" :
-          "Bodypace",
+    "name": IS_DEV ? "Bodypace (Dev)" : "Bodypace",
     "owner": "bodypace",
     "slug": "mobile-app",
     "version": "1.0.0",
@@ -18,11 +14,7 @@ module.exports = () => ({
       "backgroundColor": "#ffffff"
     },
     "updates": {
-      "fallbackToCacheTimeout": 0,
-      "url": "https://u.expo.dev/0d0c5d75-d330-4388-84a4-25719bfb414a"
-    },
-    "runtimeVersion": {
-      "policy": "sdkVersion"
+      "fallbackToCacheTimeout": 0
     },
     "assetBundlePatterns": [
       "**/*"
@@ -35,10 +27,7 @@ module.exports = () => ({
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
       },
-      "package":
-        IS_DEV ? "com.bodypace.dev.mobileapp" :
-          IS_PREVIEW ? "com.bodypace.preview.mobileapp" :
-            "com.bodypace.mobileapp"
+      "package": IS_DEV ? "com.bodypace.dev.mobileapp" : "com.bodypace.mobileapp"
     },
     "web": {
       "favicon": "./assets/favicon.png"
