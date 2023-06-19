@@ -3,7 +3,7 @@ import { View, Text, ScrollView, StyleSheet } from "react-native";
 import Group from "../group";
 import Icon from "../icon";
 import { Button } from "../button";
-import { sizes, globalStyles, useDatabase, transform } from "../../../utils"
+import { sizes, globalStyles, useDatabase } from "../../../utils"
 import Product from "../product";
 
 
@@ -31,16 +31,16 @@ export default function Eats({ adding, setAdding }) {
       </View>
       <ScrollView>
         {!adding &&
-          eats.map(p => {
-            return (<Product key={p.id} obj={p} />)
-          })
+          <>
+            {eats.map(p => {
+              return (<Product key={p.id} obj={p} />)
+            })}
+            <Button style={globalStyles.productButton} onPress={() => setAdding(!adding)}>
+              <Icon name="plus" color="silver" focused material />
+            </Button>
+          </>
         }
-        {!adding &&
-          <Button style={globalStyles.productButton} onPress={() => setAdding(!adding)}>
-            <Icon name="plus" color="silver" focused material />
-          </Button>
-        }
-        <View style={{height: 10}}/>
+        <View style={{ height: sizes.gap.mid }} />
       </ScrollView>
     </Group>
   )
