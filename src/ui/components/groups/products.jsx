@@ -12,6 +12,8 @@ export default function Products({ onCancel }) {
   const [ newProduct, setNewProduct ] = React.useState(false)
   const [ seeAlreadyAdded, setSeeAldeadyAdded ] = React.useState(false)
 
+  const filterNotSpecified = productsFilter === ''
+
   return (
     <Group style={globalStyles.flex}>
       <View style={styles.buttons}>
@@ -32,9 +34,9 @@ export default function Products({ onCancel }) {
           placeholder='Search products by name'
         />
         <Pressable style={{ justifyContent: 'center', alignItems: 'center', marginRight: 15 }}
-          onPress={onCancel}
+          onPress={() => setProductsFilter('')} disabled={filterNotSpecified}
         >
-          <Icon name="close-circle" />
+          <Icon name="close-circle" color={filterNotSpecified ? 'grey' : 'black'} />
         </Pressable>
       </View>
       <ScrollView>
