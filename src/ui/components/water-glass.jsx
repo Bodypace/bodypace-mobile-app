@@ -3,7 +3,7 @@ import { Pressable, Text, StyleSheet } from "react-native";
 import Icon from "./icon";
 import { sizes, colors, useDatabase } from "../../utils"
 
-export default function WaterGlass ({ id, amount }) {
+export default function WaterGlass({ id, amount }) {
   const { glassSize, dayFilter, addWater, delWater } = useDatabase()
 
   const adder = id === undefined && amount === undefined
@@ -23,6 +23,6 @@ export default function WaterGlass ({ id, amount }) {
 
 const styles = StyleSheet.create({
   glass: {
-    padding: 5,
+    padding: sizes.gap.small,
   },
 })

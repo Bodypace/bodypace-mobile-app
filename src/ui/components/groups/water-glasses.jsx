@@ -24,8 +24,8 @@ export default function WaterGlasses() {
 
 const styles = StyleSheet.create({
   water: {
-    padding: 10,
-    paddingHorizontal: 20,
+    padding: sizes.gap.mid,
+    paddingHorizontal: sizes.gap.large,
     flexDirection: 'row',
     flexWrap: "wrap",
   },
