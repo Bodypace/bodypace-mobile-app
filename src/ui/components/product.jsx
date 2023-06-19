@@ -156,7 +156,6 @@ export default function Product({ obj = emptyProduct, onDiscard }) {
         <View style={{ flexDirection: 'row' }}>
           {!!edits && !('amount' in edits) ?
             <Editable
-              ktype="default"
               style={[styles.editName, globalStyles.elevated]}
               input={edits.kcal}
               setInput={(v) => setEdits({ ...edits, kcal: String(v) })}
