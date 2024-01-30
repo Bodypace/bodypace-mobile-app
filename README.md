@@ -15,7 +15,14 @@
 
 # Bodypace mobile app
 
-General information about this app is on https://bodypace.org and https://github.com/Bodypace.<br/>
+> NOTE: This app is under development, first version was released to setup Google Play and as an experiment.
+> The app is working right now, but isn't really useful (does very little and poorly).
+> App will be connected to bodypace personal and public data servers, and will have all features of bodypace.org website (bodypace-frontend).
+> Also, personal data server will be storing diet info from this app and other stuff that is not yet implemented here:
+> (sleep, exercises, supplements, drugs, smart watch feed etc.)
+
+> NOTE 2: below in this doc I was mentioning something about rebasing `main`, ignore that note, I know this is terrible but will not bother for now with updating that section
+> (I'm waiting for more time to do a deep dive into mobile app again = probably after releasing ver 1.0.0 of bodypace-frontend and bodypace-personal-data-server)
 
 This app is built with [Expo](https://expo.dev/).
 
