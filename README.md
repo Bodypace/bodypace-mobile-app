@@ -21,7 +21,7 @@
 > Also, personal data server will be storing diet info from this app and other stuff that is not yet implemented here:
 > (sleep, exercises, supplements, drugs, smart watch feed etc.)
 
-> NOTE 2: below in this doc I was mentioning something about rebasing `main`, ignore that note, I know this is terrible but will not bother for now with updating that section
+> NOTE 2: below in this doc I was mentioning something about rebasing `main` in future to achieve some overcomplicated OTA updates mechanism which could be combined with hotfixes and still use App Stores for major releases... Ignore that note, I know this is terrible (rebasing `main`) but will not bother for now with updating that section
 > (I'm waiting for more time to do a deep dive into mobile app again = probably after releasing ver 1.0.0 of bodypace-frontend and bodypace-personal-data-server)
 
 This app is built with [Expo](https://expo.dev/).
